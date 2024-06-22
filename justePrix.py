@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # 1) -  Importation des modules nécessaires
 import random
+
 import tkinter as tk
 from tkinter import ttk
 
