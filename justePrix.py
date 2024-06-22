@@ -29,6 +29,7 @@ def action(event):
     # Autre façon de faire
     # Exemple 1 :
     """
+    Ceci est un dictionnaire 
     options = {
     "Débutant": 50,
     "Intermédiaire": 25,
