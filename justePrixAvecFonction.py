@@ -23,7 +23,7 @@ def action(event):
     select = listeCombo.get()
     print("Vous avez sélectionné :", select)
     
-    Vie = obtenir_vies(select)
+    Vie = obtenirVies(select)
     if Vie == 0:
         print("Option non valide")
         return
