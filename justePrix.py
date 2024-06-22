@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # 1) -  Importation des modules nécessaires
 import random
-
 import tkinter as tk
 from tkinter import ttk
 
@@ -27,11 +26,30 @@ def action(event):
         print("vous avez 5 vies")
     justePrix = random.randint(1,100)
 
+    # Autre façon de faire
+    # Exemple 1 :
+    """
+    options = {
+    "Débutant": 50,
+    "Intermédiaire": 25,
+    "Difficile": 10,
+    "Légendaire": 5
+    }
+
+    if select in options:
+            Vie = options[select]
+        print(f"vous avez {Vie} vies")
+    else:
+        print("Option non valide")
+    """
+
+    
+
     fin_du_jeu=False
     while(fin_du_jeu==False):
         if(Vie == 0):
             print("tu as perdu!")
-            fin_du_jeu=True
+            fin_du_jeu=True    
         print("Entrer le prix souhaité:")
         x = input()
         y= int (x)
