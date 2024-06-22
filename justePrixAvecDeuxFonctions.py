@@ -45,7 +45,7 @@ def action(event):
     select = listeCombo.get()
     print("Vous avez sélectionné :", select)
     
-    vies = obtenir_vies(select)
+    vies = obtenirVies(select)
     if vies == 0:
         print("Option non valide")
         return
@@ -53,7 +53,7 @@ def action(event):
     print(f"vous avez {vies} vies")
     juste_prix = random.randint(1, 100)
 
-    jouer_juste_prix(vies, juste_prix)
+    jouerJustePrix(vies, juste_prix)
 
     labelChoix = tk.Label(root, text="Veuillez faire un choix !")
     labelChoix.pack()
